@@ -21,7 +21,7 @@ int main(){
     */
     double cuerr[3][nX*num_x];
     for(int i=0;i<nX*num_x;i++){
-        cuerr[0][i]=-(i/(nX*100.0)*2-1)*(i/(nX*100.0)*2-1)+1;
+        cuerr[0][i]=sin(i*M_PI/(nX*num_x));
     }
 
     cuerr[1][0]=0;
